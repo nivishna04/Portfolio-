@@ -1,121 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Portfolio</title>
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIVISHNA Portfolio</title>
 
-        body{
-            background:#00e5ee;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
 
-        .header{
-            background:#1e90ff;
-            text-align:center;
-            color:white;
-            padding:30px;
-        }
+body{
+    background:#000;
+    color:white;
+}
 
-        .profile-img{
-            width:120px;
-            height:120px;
-            border-radius:10px;
-            border:4px solid white;
-            margin-top:15px;
-        }
+.header{
+    background:linear-gradient(135deg,#8B0000,#ff0000);
+    text-align:center;
+    padding:40px;
+}
 
-        .container{
-            display:grid;
-            grid-template-columns:repeat(2,1fr);
-            gap:20px;
-            padding:30px;
-            max-width:900px;
-            margin:auto;
-        }
+.header h1{
+    margin-bottom:15px;
+}
 
-        .card{
-            background:white;
-            padding:20px;
-            border-radius:8px;
-            min-height:220px;
-            box-shadow:0 2px 8px rgba(0,0,0,0.2);
-        }
+.profile-img{
+    width:130px;
+    height:130px;
+    border-radius:10px;
+    border:4px solid white;
+    object-fit:cover;
+}
 
-        .card h2{
-            margin-bottom:15px;
-        }
+.container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    padding:30px;
+    max-width:1000px;
+    margin:auto;
+}
 
-        .footer{
-            background:#1e90ff;
-            color:white;
-            text-align:center;
-            padding:15px;
-        }
+.card{
+    background:#111;
+    border:2px solid red;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 0 15px rgba(255,0,0,0.4);
+}
 
-        ul{
-            padding-left:20px;
-        }
+.card h2{
+    color:#ff4d4d;
+    margin-bottom:15px;
+}
 
-        @media(max-width:768px){
-            .container{
-                grid-template-columns:1fr;
-            }
-        }
-    </style>
+.card ul{
+    padding-left:20px;
+}
+
+.footer{
+    background:#8B0000;
+    text-align:center;
+    padding:15px;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+    .container{
+        grid-template-columns:1fr;
+    }
+}
+</style>
 </head>
+
 <body>
 
-    <div class="header">
-        <h1>NIVISHNA.S</h1>
-        <img src="file_0000000015187206b50e3b2358e93b91.png" alt="Profile" class="profile-img">
+<div class="header">
+    <h1>NIVISHNA.S</h1>
+    <img src="file_0000000015187206b50e3b2358e93b91.png" alt="Profile" class="profile-img">
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            I am a 2nd year B.Tech Artificial Intelligence and Data Science student at
+            VSB Engineering College. I am interested in web development,
+            artificial intelligence and emerging technologies.
+        </p>
     </div>
 
-    <div class="container">
-
-        <div class="card">
-            <h2>About Me</h2>
-            <p>
-                I am a 2nd year B.Tech Artificial Intelligence and Data Science student.
-                Interested in web development and emerging technologies.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>Education</h2>
-            <ul>
-                <li>B.Tech AI & DS</li>
-                </li> VSB ENGINEERING COLLEGE </li>
-                <li>2025 - 2029</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>Skills</h2>
-            <ul>
-                <li>Python</li>
-                <li>C Programming</li>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>Contact</h2>
-            <p>Email: nivishna689@gmail.com</p>
-            <br>
-            <p>Phone: 9715685375</p>
-        </div>
-
+    <div class="card">
+        <h2>Education</h2>
+        <ul>
+            <li>B.Tech Artificial Intelligence and Data Science</li>
+            <li>VSB Engineering College</li>
+            <li>2025 - 2029</li>
+        </ul>
     </div>
 
-    <div class="footer">
-        NIVISHNA 
+    <div class="card">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>C Programming</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
     </div>
+
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: nivishna689@gmail.com</p>
+        <br>
+        <p>Phone: 9715685375</p>
+    </div>
+
+</div>
+
+<div class="footer">
+    Created By NIVISHNA.S
+</div>
 
 </body>
-                       </html>
+    </html>
